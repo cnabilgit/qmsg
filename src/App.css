@@ -1,0 +1,47 @@
+*{
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+img.logo {
+  max-width: 20rem;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+#copy {
+  color: #fff;
+  background-color: #3ab982;
+  border-color: #76fbc1;
+}
+
+#copy:hover {
+  color: #fff;
+  background-color: #3ab982;
+  border-color: #76fbc1;
+}
+#copy:focus {
+  box-shadow: 0 0 0 0.2rem #28a74538;
+
+}
+
+.container.loading {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container.loading img {
+  width: 200px;
+}
+.container.loading-text {
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 60vh;
+  font-size: 30px;
+  color: #3eb57f;
+}
