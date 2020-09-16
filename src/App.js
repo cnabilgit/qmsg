@@ -6,8 +6,8 @@ import SubCategory from "./components/SubCategory";
 
 // VARIABLES 
 let myset = new Set()
-// let url = "https://sheetsu.com/apis/v1.0bu/05c2c5a08ead";
-let url = "-./data.json";
+let url = "https://sheetsu.com/apis/v1.0bu/05c2c5a08ead";
+// let url = "./data.json";
 const App = () => {
 
   // -----  GLOBAL STATES
@@ -50,7 +50,7 @@ const App = () => {
     (<div className='container'> <div className="loading">
       <img src="/annimated.svg" alt="spinner" />
     </div></div>)
-    : (<div className='container'>
+    : (<div className='container mt-5'>
       <div className="alert alert-success mt-2 d-none" role="alert" id='alert'>
         Text sucessfyly copied to clipboard !!!
 </div>
