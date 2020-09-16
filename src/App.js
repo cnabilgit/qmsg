@@ -36,13 +36,16 @@ const App = () => {
 
   function clipboard() {
     var copyText = document.getElementById("text");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999)
-    document.execCommand("copy");
-    document.getElementById('alert').classList.add('scale-up-center')
-    setTimeout(() => {
-      document.getElementById('alert').classList.remove('scale-up-center')
-    }, 2000)
+    if (document.getElementById('text').value !== "") {
+      document.getElementById("cont").innerHTML = copyText.value
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      document.getElementById('alert').classList.add('scale-up-center')
+      setTimeout(() => {
+        document.getElementById('alert').classList.remove('scale-up-center')
+      }, 2000)
+    }
   }
 
   // -----  USER interface
@@ -52,8 +55,11 @@ const App = () => {
     </div></div>)
     : (<div className='container mt-5'>
       <div className="alert alert-success mt-2 d-none" role="alert" id='alert'>
-        Text sucessfyly copied to clipboard !!!
-</div>
+        Your Text successfully copied to clipboard !!! <br />
+        <div>
+          ___ <div id='cont' > </div>
+        </div>
+      </div>
       <div className="row">
         <img src="/logo.png" alt="logo" className="logo" />
       </div>
