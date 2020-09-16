@@ -1,8 +1,11 @@
-*{
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+* {
+  -webkit-transition: all 0.5s cubic-bezier(1, -0.01, 0, 1.01);
+  -o-transition: all 0.5s cubic-bezier(1, -0.01, 0, 1.01);
+  transition: all 0.5s cubic-bezier(1, -0.01, 0, 1.01);
+  text-align: right;
+  direction: rtl;
 }
+
 img.logo {
   max-width: 20rem;
   padding: 20px;
@@ -22,21 +25,28 @@ img.logo {
   background-color: #3ab982;
   border-color: #76fbc1;
 }
+
 #copy:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #28a74538;
   box-shadow: 0 0 0 0.2rem #28a74538;
 
 }
 
 .container.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100vw;
   height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .container.loading img {
   width: 200px;
 }
+
 .container.loading-text {
   text-align: center;
   display: block;
@@ -44,4 +54,54 @@ img.logo {
   top: 60vh;
   font-size: 30px;
   color: #3eb57f;
+}
+
+.form-group {
+  width: 90%;
+}
+
+.d-none {
+  display: none;
+
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40rem;
+}
+
+
+.scale-up-center {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
