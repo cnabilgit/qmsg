@@ -6,8 +6,8 @@ import SubCategory from "./components/SubCategory";
 
 // VARIABLES 
 let myset = new Set()
-let url = "https://sheetsu.com/apis/v1.0bu/05c2c5a08ead";
-// let url = "./data.json";
+// let url = "https://sheetsu.com/apis/v1.0bu/05c2c5a08ead";
+let url = "./data.json";
 const App = () => {
 
   // -----  GLOBAL STATES
