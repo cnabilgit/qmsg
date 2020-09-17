@@ -73,10 +73,13 @@ const App = () => {
       </div>
       <div className="row" >
         <div className="form-group">
-          <label htmlFor="exampleFormControlTextarea1">Example textarea</label>
+          <label htmlFor="exampleFormControlTextarea1">Text to copy :</label>
           <textarea className="form-control" id="text" rows={8} defaultValue={subcatVal.map(cat => cat.msg)} />
         </div>
-        <button type="button" className="btn btn-primary btn-lg" onClick={clipboard}>Copy to clipboard </button>
+        <div className="container mb-5">
+
+          <button type="button" className="btn btn-primary btn-lg" onClick={clipboard}>Copy to clipboard </button>
+        </div>
 
       </div>
     </div>)

@@ -6,7 +6,7 @@ export default function Category({ data, setcat }) {
     <div> loading category </div>
   ) : (
     <div className="form-group">
-      <label>Example select</label>
+      <label>Category : </label>
       <select
         className="form-control form-control-lg d-flex"
         ref={catinput}
@@ -17,7 +17,7 @@ export default function Category({ data, setcat }) {
           setcat(catinput.current.value);
         }}
       >
-        <option value="select">select category</option>
+        <option value="category">select category</option>
         {data.map((data, i) => (
           <option value={data} key={i}>
             {data}

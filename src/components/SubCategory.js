@@ -6,7 +6,7 @@ export default function SubCategory({ data, subcatset }) {
     <div> loading sub category </div>
   ) : (
     <div className="form-group">
-      <label>Example select</label>
+      <label>Sub Category : </label>
       <select
         className="form-control form-control-lg d-flex"
         onMouseDown={() => {
@@ -17,7 +17,7 @@ export default function SubCategory({ data, subcatset }) {
         }}
         ref={subcatinput}
       >
-        <option value="select">select Sub category</option>
+        <option value="subcategory">select Sub Category</option>
         {data.map((data, i) => (
           <option value={data.title} key={i}>
             {data.title}
