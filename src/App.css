@@ -5,7 +5,9 @@
 }
 
 img.logo {
-  max-width: 20rem;
+  max-width: 20em;
+  height: auto;
+  max-height: auto;
   padding: 20px;
   margin: 0 auto;
   text-align: center;

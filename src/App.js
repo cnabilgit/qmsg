@@ -53,25 +53,25 @@ const App = () => {
     (<div className='container'> <div className="loading">
       <img src="/annimated.svg" alt="spinner" />
     </div></div>)
-    : (<div className='container mt-5'>
+    : (<div className='container  mt-5 pr-2 pl-2 col-xs-1'>
       <div className="alert alert-success mt-2 d-none" role="alert" id='alert'>
         Your Text successfully copied to clipboard !!! <br />
         <div>
-          ___ <div id='cont' > </div>
+          <div id='cont' > </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row d-flex">
         <img src="/logo.png" alt="logo" className="logo" />
       </div>
 
-      <div className="row">
+      <div className="row ml-2 mr-2">
         {}
         <Category data={[...myset]} setcat={setcat} />
       </div>
-      <div className="row" >
+      <div className="row ml-2 mr-2" >
         <SubCategory data={sub} subcatset={subcatset} />
       </div>
-      <div className="row" >
+      <div className="row ml-2 mr-2" >
         <div className="form-group">
           <label htmlFor="exampleFormControlTextarea1">Text to copy :</label>
           <textarea className="form-control" id="text" rows={8} defaultValue={subcatVal.map(cat => cat.msg)} />
