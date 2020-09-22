@@ -27,7 +27,11 @@ min-width: 50%;
 #copy:focus {
   -webkit-box-shadow: 0 0 0 0.2rem #28a74538;
   box-shadow: 0 0 0 0.2rem #28a74538;
+}
 
+#text {
+  padding: 10px;
+  color: #3ab982;
 }
 
 .container.loading {
@@ -75,11 +79,11 @@ min-width: 50%;
   height: 40rem;
 }
 
-
 .scale-up-center {
   display: block !important;
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1)
+    both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
 @-webkit-keyframes scale-up-center {
@@ -108,7 +112,7 @@ min-width: 50%;
 
 label {
   display: inline-block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   color: #33495f !important;
   font-weight: bold !important;
 }
