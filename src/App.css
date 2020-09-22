@@ -5,13 +5,11 @@
 }
 
 img.logo {
-  max-width: 20em;
-  height: auto;
-  max-height: auto;
-  padding: 20px;
-  margin: 0 auto;
-  text-align: center;
-  display: block;
+min-width: 50%;
+    max-width: 50%;
+    height: auto;
+    margin: 30px auto;
+    display: block;
 }
 
 #copy {
