@@ -65,7 +65,6 @@ const App = () => {
       </div>
 
       <div className="row ml-2 mr-2">
-        {}
         <Category data={[...myset]} setcat={setcat} />
       </div>
       <div className="row ml-2 mr-2" >
