@@ -60,7 +60,7 @@ const App = () => {
           <div id='cont' > </div>
         </div>
       </div>
-      <div className="row d-flex">
+      <div className="row">
         <img src="/logo.png" alt="logo" className="logo" />
       </div>
 
