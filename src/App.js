@@ -60,7 +60,7 @@ const App = () => {
           <div id='cont' > </div>
         </div>
       </div>
-      <div className="row">
+      <div className="logo-container">
         <img src="/logo.png" alt="logo" className="logo" />
       </div>
 
